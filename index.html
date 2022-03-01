@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Box</title>
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <style>
+        .main-box{
+            margin: 50px auto;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            border: 5px solid aqua;
+            border-radius: 50%;
+            position: relative;
+            /* transition: all 0.1s ease; */
+
+        }
+        .heart-box{
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 0, 0);
+            border-radius: 50%;
+            position: relative;
+            opacity: 0.6;
+            transition: all 2s ease;
+
+        }
+        .main-box h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            margin: 0;
+            text-shadow:2px 2px 2px wheat ;
+            font-size: 60px;
+            transition:all 1s ease;
+        }
+        .main-box:hover .heart-box{
+            display: block;
+            position: absolute;
+            margin-top: -400px;
+        }
+        .love {
+            font-size: 80px;
+            color: white;
+            position: absolute;
+            top: 38%;
+            left: 38%;
+            transform: translate(-50%; -50%;);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-box">
+        <h1>RIPON</h1>
+        <div class="heart-box">
+            <div class="love">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+    </div>
+    <script src="font-awesome/all.min.js" ></script>
+</body>
+</html>
